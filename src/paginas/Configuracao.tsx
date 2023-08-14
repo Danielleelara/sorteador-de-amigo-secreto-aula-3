@@ -2,13 +2,8 @@ import Card from "../componentes/Card"
 import Formulario from "../componentes/Formulario"
 import ListaParticipantes from "../componentes/ListaParticipantes"
 import Rodape from "../componentes/Rodape"
-import { useSorteador } from "../state/hook/useSorteador"
 
 const Configuracao = () => {
-
-    const sorteador = useSorteador()
-
-  console.log(sorteador)
 
     return (
         <Card>
