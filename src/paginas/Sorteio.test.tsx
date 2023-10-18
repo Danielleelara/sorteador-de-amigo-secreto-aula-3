@@ -31,10 +31,15 @@ describe('na pagina de sorteio', ()=> {
     ['Catarina', 'Ana']
   ])
   
-  beforeEach(() => {
-    (useListaDeParticipantes as jest.Mock).mockReturnValue(participantes);
-    (useResultadoSorteio as jest.Mock).mockReturnValue(resultado);
-})
+   beforeEach(() => {
+        (useListaDeParticipantes as jest.Mock).mockReturnValue(participantes);
+        (useResultadoSorteio as jest.Mock).mockReturnValue(resultado);
+    })
+
+    beforeEach(() => {
+      (useListaDeParticipantes as jest.Mock).mockReturnValue(participantes);
+      (useResultadoSorteio as jest.Mock).mockReturnValue(resultado);
+  })
 
 
   test('todos os participantes podem exibir o seu amigo secreto', ()=> {
